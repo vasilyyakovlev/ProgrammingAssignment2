@@ -3,11 +3,12 @@
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
-## Setting the function.
+## Setting the matrix.
         set <- function(y) {
                 x <<- y
                 i <<- NULL
         }
+## Getting the matrix.       
         get <- function() x
         setSolve <- function(solve) i <<- solve
         getSolve <- function() i
